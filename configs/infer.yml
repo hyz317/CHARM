@@ -1,0 +1,39 @@
+model:
+  name: charm
+  num_discrete_translation_x: [96, 320, 96]
+  num_discrete_translation_y: [96, 160, 256]
+  num_discrete_translation_z: [96, 320, 96]
+  continuous_range_translation_x: [-0.501, -0.1, 0.1, 0.501]
+  continuous_range_translation_y: [-0.501, 0.0, 0.3, 0.501]
+  continuous_range_translation_z: [-0.501, -0.15, 0.1, 0.501]
+  dim_translation_embed: 16
+  num_discrete_width: [64, 64]
+  continuous_range_width: [0, 0.03, 0.1]
+  dim_width_embed: 16
+  num_discrete_thickness: [64, 64]
+  continuous_range_thickness: [0, 0.02, 0.1]
+  dim_thickness_embed: 16
+  embed_order: xyzwt
+  dim: 768
+  attn_depth: 6
+  attn_heads: 6
+  max_token_len: 8192
+  dropout: 0.
+  coarse_pre_gateloop_depth: 3
+  gateloop_use_heinsen: False
+  shape_cond_with_cross_attn: False
+  shape_cond_with_film: False
+  shape_cond_with_cat: True
+  shape_condition_model_type: michelangelo
+  shape_condition_len: 77
+  shape_condition_dim: 768
+dataset:
+  name: dev
+  pc_dir: ./test_cases/pc
+  max_length: 8192
+  range_translation: [-0.501, 0.501]
+  range_width: [0, 0.1]
+  range_thickness: [0, 0.1]
+  use_pc: True
+  pc_format: pn
+

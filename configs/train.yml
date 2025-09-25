@@ -1,0 +1,58 @@
+model:
+  name: charm
+  num_discrete_translation_x: [96, 320, 96]
+  num_discrete_translation_y: [96, 160, 256]
+  num_discrete_translation_z: [96, 320, 96]
+  continuous_range_translation_x: [-0.501, -0.1, 0.1, 0.501]
+  continuous_range_translation_y: [-0.501, 0.0, 0.3, 0.501]
+  continuous_range_translation_z: [-0.501, -0.15, 0.1, 0.501]
+  dim_translation_embed: 16
+  num_discrete_width: [64, 64]
+  continuous_range_width: [0, 0.03, 0.1]
+  dim_width_embed: 16
+  num_discrete_thickness: [64, 64]
+  continuous_range_thickness: [0, 0.02, 0.1]
+  dim_thickness_embed: 16
+  embed_order: xyzwt
+  dim: 768
+  attn_depth: 6
+  attn_heads: 6
+  max_token_len: 8192
+  dropout: 0.
+  coarse_pre_gateloop_depth: 3
+  gateloop_use_heinsen: False
+  shape_cond_with_cross_attn: False
+  shape_cond_with_film: False
+  shape_cond_with_cat: True
+  shape_condition_model_type: michelangelo
+  shape_condition_len: 77
+  shape_condition_dim: 768
+  loss_weight:
+    eos: 1.0
+    mos: 1.0
+    width: 1.0
+    thickness: 1.0
+    translation: 1.0
+    eos_ce_weight: 2000.0
+    mos_ce_weight: 40.0
+dataset:
+  name: dev
+  file_list: ./data/train_list.json
+  file_dir: PLEASE_SET_YOUR_DATA_DIR
+  max_length: 8192
+  range_translation: [-0.501, 0.501]
+  range_width: [0, 0.1]
+  range_thickness: [0, 0.1]
+  use_pc: True
+  pc_format: pn
+training:
+  batch_size: 2
+  grad_accum_every: 4
+  num_train_epochs: 2000
+  val_ratio: 0.003
+  val_every: 100
+  learning_rate: 1.0e-4
+  checkpoint_every_epoch: 
+  checkpoint_every: 2000
+  warmup_steps: 0
+  use_wandb_tracking: True

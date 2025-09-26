@@ -1,6 +1,6 @@
 # CHARM: Control-point-based 3D Anime Hairstyle Auto-Regressive Modeling
 
-<a href="https://hyzcluster.github.io/charm/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Github&color=blue&logo=github-pages"></a>&ensp;<a href="https://arxiv.org/abs/2509.xxxxx"><img src="https://img.shields.io/badge/ArXiv-2509.xxxxx-brightgreen"></a>&ensp;<a href="https://huggingface.co/hyz317/CHARM"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model_Card-Huggingface-orange"></a>
+<a href="https://hyzcluster.github.io/charm/"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Github&color=blue&logo=github-pages"></a>&ensp;<a href="https://arxiv.org/abs/2509.21114"><img src="https://img.shields.io/badge/ArXiv-2509.21114-brightgreen"></a>&ensp;<a href="https://huggingface.co/hyz317/CHARM"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model_Card-Huggingface-orange"></a>
 
 <div align="center">
 
@@ -162,7 +162,7 @@ If you find our work useful, please kindly cite:
 @article{he2025charm,
   title={CHARM: Control-point-based 3D Anime Hairstyle Auto-Regressive Modeling},
   author={He, Yuze and Zhou, Yanning and Zhao, Wang and Ye, Jingwen and Bai, Yushi and Xiao, Kaiwen and Liu, Yong-Jin and Sun, Zhongqian and Yang, Wei},
-  journal={arXiv preprint arXiv:2509.xxxxx},
+  journal={arXiv preprint arXiv:2509.21114},
   year={2025}
 }
 ```

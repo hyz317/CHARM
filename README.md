@@ -159,10 +159,11 @@ python sample_hair.py --input_dir /PATH/TO/YOUR/SAVEDIR
 If you find our work useful, please kindly cite:
 
 ```
-@article{he2025charm,
+@inproceedings{he2025charm,
   title={CHARM: Control-point-based 3D Anime Hairstyle Auto-Regressive Modeling},
   author={He, Yuze and Zhou, Yanning and Zhao, Wang and Ye, Jingwen and Bai, Yushi and Xiao, Kaiwen and Liu, Yong-Jin and Sun, Zhongqian and Yang, Wei},
-  journal={arXiv preprint arXiv:2509.21114},
+  booktitle={Proceedings of the SIGGRAPH Asia 2025 Conference Papers},
+  pages={1--12},
   year={2025}
 }
 ```
